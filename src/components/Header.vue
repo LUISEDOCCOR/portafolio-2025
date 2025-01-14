@@ -27,7 +27,7 @@ const links = [
 
 <template>
   <header class="grid grid-cols-3">
-    <section class="col-span-2 space-y-3 text-neutral-600">
+    <section class="col-span-3 space-y-3 text-neutral-600 md:col-span-2">
       <h1 class="text-2xl font-bold text-black">Luis Eduardo</h1>
       <p class="jetbrains-mono text-md">
         +2 años de experiencia. Desarrollador Front-end y Back-End. Programador
@@ -51,7 +51,7 @@ const links = [
         </li>
       </ul>
     </section>
-    <section class="flex items-center justify-end">
+    <section class="hidden items-center justify-end md:flex">
       <img
         class="w-40 rounded-md"
         src="https://avatars.githubusercontent.com/u/110699874?v=4"

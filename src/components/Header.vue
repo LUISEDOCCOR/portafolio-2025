@@ -52,11 +52,11 @@ const links = [
       </ul>
     </section>
     <section class="hidden items-center justify-end md:flex">
-      <img
+      <!-- <img
         class="w-36 rounded-md"
         src="https://avatars.githubusercontent.com/u/110699874?v=4"
         alt="Luis Eduardo Cortes"
-      />
+      /> -->
     </section>
   </header>
 </template>

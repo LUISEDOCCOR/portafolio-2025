@@ -9,8 +9,7 @@ const education = [
   },
   {
     title: "TAE de progrmación web",
-    contetnt: `Especialización brindada por el bachillerato
-    núm.9 de la Universidad de Guadalajara, en la cual se
+    contetnt: `Especialización brindada por el bachillerato,en la cual se
     ven temas relacionados con la programación web,
     programación funcional y programación orientada a
     objetos. Todo esto en un plazo de 2 años`,

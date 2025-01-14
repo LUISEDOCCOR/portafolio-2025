@@ -11,7 +11,9 @@
   "dependencies": {
     "@fontsource-variable/dm-sans": "^5.1.1",
     "@fontsource-variable/jetbrains-mono": "^5.1.2",
-    "vue": "^3.5.13"
+    "@vercel/analytics": "^1.4.1",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.2.1",

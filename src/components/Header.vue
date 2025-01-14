@@ -53,7 +53,7 @@ const links = [
     </section>
     <section class="hidden items-center justify-end md:flex">
       <img
-        class="w-40 rounded-md"
+        class="rounded-md md:w-36 xl:w-40"
         src="https://avatars.githubusercontent.com/u/110699874?v=4"
         alt="Luis Eduardo Cortes"
       />

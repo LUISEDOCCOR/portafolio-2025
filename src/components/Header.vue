@@ -35,7 +35,7 @@ const links = [
       </p>
       <div class="jetbrains-mono flex items-center gap-1 text-sm">
         <LocationIcon class="w-4 stroke-2" />
-        <h2>Jalisco, México</h2>
+        <h2>México</h2>
       </div>
       <ul class="flex items-center gap-3">
         <li

@@ -1,4 +1,6 @@
 <script setup>
+import Section from "./UI/Section.vue";
+
 const education = [
   {
     title: "Bachillerato",
@@ -17,8 +19,7 @@ const education = [
 ];
 </script>
 <template>
-  <section class="space-y-3">
-    <h2 class="text-xl font-semibold">Educación</h2>
+  <Section title="Educación">
     <ul class="space-y-2">
       <li
         class="grid grid-cols-3 text-neutral-600"
@@ -34,5 +35,5 @@ const education = [
         </div>
       </li>
     </ul>
-  </section>
+  </Section>
 </template>

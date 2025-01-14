@@ -3,6 +3,7 @@ import MainLayout from "./layouts/MainLayout.vue";
 import Header from "./components/Header.vue";
 import AboutMe from "./components/AboutMe.vue";
 import Education from "./components/Education.vue";
+import Skills from "./components/Skills.vue";
 </script>
 
 <template>
@@ -11,6 +12,7 @@ import Education from "./components/Education.vue";
     <main class="mt-16 space-y-10">
       <AboutMe />
       <Education />
+      <Skills />
     </main>
   </MainLayout>
 </template>

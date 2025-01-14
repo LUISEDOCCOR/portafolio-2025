@@ -15,7 +15,7 @@ const skills = [
 </script>
 <template>
   <Section title="Skills">
-    <ul class="flex flex-wrap justify-center gap-2 md:justify-start">
+    <ul class="flex flex-wrap justify-start gap-2">
       <li v-for="(skill, index) in skills" :key="index">
         <Tag :label="skill" />
       </li>

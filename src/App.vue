@@ -5,16 +5,20 @@ import AboutMe from "./components/AboutMe.vue";
 import Education from "./components/Education.vue";
 import Skills from "./components/Skills.vue";
 import Projects from "./components/Projects.vue";
+import Certificates from "./components/Certificates.vue";
+import Footer from "./components/Footer.vue";
 </script>
 
 <template>
   <MainLayout>
     <Header />
-    <main class="mt-16 space-y-10">
+    <main class="my-16 space-y-10">
       <AboutMe />
       <Education />
       <Skills />
       <Projects />
+      <Certificates />
     </main>
+    <Footer />
   </MainLayout>
 </template>

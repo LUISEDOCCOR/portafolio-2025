@@ -39,9 +39,9 @@ const projects = [
 </script>
 <template>
   <Section title="Proyectos">
-    <ul class="grid grid-cols-1 gap-5 md:grid-cols-3">
+    <ul class="grid grid-cols-1 gap-5 md:grid-cols-2">
       <li
-        class="flex flex-col justify-between gap-2 rounded-md border border-neutral-600 p-5"
+        class="flex flex-col justify-between gap-2 rounded-md border border-neutral-600 p-3"
         v-for="(project, index) in projects"
         :key="index"
       >
@@ -54,7 +54,7 @@ const projects = [
             >
             <component class="w-5 stroke-2" :is="project.icon || CodeIcon" />
           </span>
-          <p class="jetbrains-mono text-sm">
+          <p class="jetbrains-mono text-sm text-neutral-600">
             {{ project.content }}
           </p>
         </div>
@@ -62,7 +62,8 @@ const projects = [
           <Tag
             v-show="project.isWorking"
             bg="bg-green-600"
-            label="construcción..."
+            class="text-white"
+            label="en construcción..."
           />
           <li v-for="(skill, index) in project.skills" :key="index">
             <Tag :label="skill" />

@@ -4,6 +4,7 @@ import Header from "./components/Header.vue";
 import AboutMe from "./components/AboutMe.vue";
 import Education from "./components/Education.vue";
 import Skills from "./components/Skills.vue";
+import Projects from "./components/Projects.vue";
 </script>
 
 <template>
@@ -13,6 +14,7 @@ import Skills from "./components/Skills.vue";
       <AboutMe />
       <Education />
       <Skills />
+      <Projects />
     </main>
   </MainLayout>
 </template>

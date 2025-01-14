@@ -48,7 +48,7 @@ const certificates = [
   <Section title="Certificaciones">
     <ul class="grid grid-cols-1 gap-5 md:grid-cols-3">
       <li
-        class="flex flex-col justify-between gap-2 rounded-md border border-neutral-600 p-3"
+        class="flex flex-col justify-between gap-2 rounded-md border border-neutral-600 p-2 md:p-3"
         v-for="(certificate, index) in certificates"
         :key="index"
       >

@@ -21,15 +21,15 @@ const education = [
   <Section title="Educación">
     <ul class="space-y-2">
       <li
-        class="grid grid-cols-3 text-neutral-600"
+        class="flex flex-col-reverse text-neutral-600 md:flex-row"
         v-for="(item, index) in education"
         :key="index"
       >
-        <div class="text-md col-span-2 space-y-1">
+        <div class="text-md w-full space-y-1 md:w-4/5">
           <h3 class="font-bold text-black">{{ item.title }}</h3>
           <p class="jetbrains-mono">{{ item.contetnt }}</p>
         </div>
-        <div class="text-right">
+        <div class="w-full text-right md:w-1/5">
           <span>{{ item.date }}</span>
         </div>
       </li>

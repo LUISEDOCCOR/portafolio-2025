@@ -3,6 +3,7 @@ import Section from "./UI/Section.vue";
 import TikTokIcon from "./Icons/TikTokIcon.vue";
 import CodeIcon from "./Icons/CodeIcon.vue";
 import Tag from "./UI/Tag.vue";
+import CardBase from "./UI/CardBase.vue";
 
 const projects = [
   {
@@ -40,24 +41,13 @@ const projects = [
 <template>
   <Section title="Proyectos">
     <ul class="grid grid-cols-1 gap-5 md:grid-cols-2">
-      <li
-        class="flex flex-col justify-between gap-2 rounded-md border border-neutral-600 p-2 md:p-3"
+      <CardBase
         v-for="(project, index) in projects"
         :key="index"
+        :title="project.title"
+        :href="project.href"
+        :content="project.content"
       >
-        <div class="space-y-2">
-          <span class="flex items-center gap-1">
-            <a
-              :href="project.href"
-              class="text-md font-semibold underline underline-offset-2"
-              >{{ project.title }}</a
-            >
-            <component class="w-5 stroke-2" :is="project.icon || CodeIcon" />
-          </span>
-          <p class="jetbrains-mono text-sm text-neutral-600">
-            {{ project.content }}
-          </p>
-        </div>
         <ul class="flex flex-wrap justify-start gap-1">
           <Tag
             v-show="project.isWorking"
@@ -69,7 +59,7 @@ const projects = [
             <Tag :label="skill" />
           </li>
         </ul>
-      </li>
+      </CardBase>
     </ul>
   </Section>
 </template>

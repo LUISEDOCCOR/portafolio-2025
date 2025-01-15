@@ -1,5 +1,6 @@
 <script setup>
 import Section from "./UI/Section.vue";
+import CardBase from "./UI/CardBase.vue";
 
 const certificates = [
   {
@@ -47,21 +48,13 @@ const certificates = [
 <template>
   <Section title="Certificaciones">
     <ul class="grid grid-cols-1 gap-5 md:grid-cols-3">
-      <li
-        class="flex flex-col justify-between gap-2 rounded-md border border-neutral-600 p-2 md:p-3"
+      <CardBase
         v-for="(certificate, index) in certificates"
         :key="index"
-      >
-        <a
-          :href="certificate.href"
-          class="text-md font-semibold underline underline-offset-2"
-        >
-          {{ certificate.title }}
-        </a>
-        <p class="jetbrains-mono text-sm text-neutral-600">
-          {{ certificate.content }}
-        </p>
-      </li>
+        :title="certificate.title"
+        :href="certificate.href"
+        :content="certificate.content"
+      />
     </ul>
   </Section>
 </template>
